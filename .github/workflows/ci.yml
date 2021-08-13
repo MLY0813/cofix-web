@@ -30,9 +30,9 @@ jobs:
       - name: upload files to OSS
         uses: fangbinwei/aliyun-oss-website-action@v1
         with:
-          accessKeyId: ${{secrets.ACCESS_KEY_ID}}
-          accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
           bucket: 'cofix-web'
           # use your own endpoint
           endpoint: 'oss-cn-shanghai.aliyuncs.com'
           folder: 'build'
+          accessKeyId: ${{secrets.ACCESS_KEY_ID}}
+          accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
